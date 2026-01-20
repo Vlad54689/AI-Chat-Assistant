@@ -43,7 +43,6 @@ To run this project, you need:
 Clone the repository:
   <div style="position: relative; border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
   <button style="position: absolute; top: 8px; right: 8px; padding: 3px 8px; font-size: 12px; font-weight: 500; color: #24292e; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 4px; cursor: pointer; z-index: 1;" onclick="navigator.clipboard.writeText(document.getElementById('code-snippet').textContent).then(() => { this.textContent = 'Copied!'; setTimeout(() => { this.textContent = 'Copy'; }, 2000); })">
-    Copy
   </button>
   <pre><code id="code-snippet">git clone https://github.com/your-username/ai-chat-assistant.git
 cd ai-chat-assistant</code></pre>
