@@ -72,3 +72,23 @@ Import Workflow:
 
 # Theory & Concepts
 This project leverages several State-of-the-Art (SOTA) concepts:
+* **Transformer Architecture**: Uses self-attention to process global dependencies in message threads.
+* **In-Context Learning**: The agent adapts to tasks via prompting without requiring fine-tuning.
+* **Generative Agents**: Utilizes persistent memory (PostgreSQL) to simulate consistent behavior over time.
+* **Subword Tokenization**: Handles typos and informal corporate slang effectively.
+
+##  References & Bibliography
+
+### Technical Documentation
+1. **Meta AI**, ["Introducing Meta Llama 3: The most capable openly available LLM to date"](https://ai.meta.com/blog/meta-llama-3/), April 2024.
+2. **Ollama Team**, ["Ollama Documentation - Architecture and Usage"](https://github.com/ollama/ollama), 2024.
+3. **n8n**, ["AI Agents and Workflow Automation"](https://docs.n8n.io/), 2024.
+4. **PostgreSQL Global Development Group**, ["About PostgreSQL & JSONB Support"](https://www.postgresql.org/about/), 2024.
+
+### Academic Papers & Research
+* **Vaswani et al. (2017)**. ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762). *Advances in Neural Information Processing Systems (NIPS)*.
+* **Brown et al. (2020)**. ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165). *NeurIPS*.
+* **Touvron et al. (2023)**. ["LLaMA: Open and Efficient Foundation Models"](https://arxiv.org/abs/2302.13971). *arXiv preprint*.
+* **Jiang et al. (2023)**. ["Mistral 7B"](https://arxiv.org/abs/2310.06825). *arXiv preprint*.
+* **Yao et al. (2023)**. ["ReAct: Synergizing Reasoning and Acting in Language Models"](https://arxiv.org/abs/2210.03629). *ICLR*.
+* **Park et al. (2023)**. ["Generative Agents: Interactive Simulacra of Human Behavior"](https://arxiv.org/abs/2304.03442). *UIST*.
