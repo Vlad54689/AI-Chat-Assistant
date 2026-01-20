@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+
+# --- Data: database and AI models ---
+*_data/
+
+# --- System Junk ---
+.DS_Store
+Thumbs.db
