@@ -62,7 +62,7 @@ Start the Services: Use Docker Compose to spin up n8n, PostgreSQL, and Ollama si
 Automatic Model Initialization: When you run docker-compose up -d, a temporary service named model-puller will automatically start, download the required LLM (defined in .env), and then stop. Note: The first run may take a few minutes depending on your internet speed as it downloads the model (approx 4GB).
 
 ### Import Workflow:
-* Open n8n in your browser using ngrok domain.
+* Open n8n in your browser using the ngrok domain.
 * Import the n8n/workflows/main_agent.json file.
 * Activate the workflow.
 
