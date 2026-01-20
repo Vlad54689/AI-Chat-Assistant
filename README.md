@@ -30,3 +30,10 @@ The system is built as a modular pipeline combining LLMs, visual orchestration, 
 **Data Privacy**: All processing happens locally using open-source models; no data is sent to external cloud AI providers.
 
 **Multi-Agent Behavior**: Implements a Planner -> Executor -> Critic flow (ReAct architecture) to handle complex reasoning.
+
+# Prerequisites
+To run this project, you need:
+
+* Docker Desktop installed.
+* A Telegram Bot Token (from @BotFather).
+* System resources capable of running Llama 3 (Minimum 8GB RAM recommended for 7B/8B models).
