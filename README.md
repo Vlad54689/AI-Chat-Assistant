@@ -4,7 +4,7 @@ Motivated by the high volume of daily information in office environments, this p
 
 The system is built as a modular pipeline combining LLMs, visual orchestration, and persistent memory.
 
-# Core Workflow
+## Core Workflow
 1) **Data Collection**: Raw messages are collected from Telegram via API.
 
 2) **Context Retrieval**: User preferences are extracted from a PostgreSQL database to parameterize the analysis.
@@ -13,7 +13,7 @@ The system is built as a modular pipeline combining LLMs, visual orchestration, 
 
 4) **Action**: The system generates a personalized summary or takes action (e.g., calendar updates).
 
-# Technical Stack
+## Technical Stack
 **LLM Engine**: Ollama running Llama 3 (for reasoning) and Mistral (for long context) locally to ensure data sovereignty.
 
 **Orchestration**: n8n manages the workflow logic, connecting Telegram, the LLM, and the database.
@@ -22,7 +22,7 @@ The system is built as a modular pipeline combining LLMs, visual orchestration, 
 
 **Infrastructure**: Docker is used to containerize all services, ensuring reproducibility and isolation.
 
-# Features
+## Features
 **Message Summarization**: Identifies tasks and summaries from long threads.
 
 **Smart Filtering**: Distinguishes between noise and critical information based on user-defined rules.
@@ -31,14 +31,14 @@ The system is built as a modular pipeline combining LLMs, visual orchestration, 
 
 **Multi-Agent Behavior**: Implements a Planner -> Executor -> Critic flow (ReAct architecture) to handle complex reasoning.
 
-# Prerequisites
+## Prerequisites
 To run this project, you need:
 
 * Docker Desktop installed.
 * A Telegram Bot Token (from @BotFather).
 * System resources capable of running Llama 3 (Minimum 8GB RAM recommended for 7B/8B models).
 
-# Installation & Setup
+## Installation & Setup
 
 Clone the repository:
   <div style="position: relative; border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
@@ -70,7 +70,7 @@ Import Workflow:
 * Import the n8n/workflows/main_agent.json file.
 * Activate the workflow.
 
-# Theory & Concepts
+## Theory & Concepts
 This project leverages several State-of-the-Art (SOTA) concepts:
 * **Transformer Architecture**: Uses self-attention to process global dependencies in message threads.
 * **In-Context Learning**: The agent adapts to tasks via prompting without requiring fine-tuning.
