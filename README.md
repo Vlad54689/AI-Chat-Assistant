@@ -37,3 +37,10 @@ To run this project, you need:
 * Docker Desktop installed.
 * A Telegram Bot Token (from @BotFather).
 * System resources capable of running Llama 3 (Minimum 8GB RAM recommended for 7B/8B models).
+
+# Installation & Setup
+
+Clone the repository:
+  git clone https://github.com/your-username/ai-chat-assistant.git
+  cd ai-chat-assistant
+
