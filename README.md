@@ -59,12 +59,8 @@ Start the Services: Use Docker Compose to spin up n8n, PostgreSQL, and Ollama si
   </button>
   <pre><code id="code-snippet">docker-compose up -d</code></pre>
 </div>
-Initialize the Model: Access the Ollama container and pull the required model.
-<div style="position: relative; border-radius: 6px; overflow: hidden; border: 1px solid #e1e4e8;">
-  <button style="position: absolute; top: 8px; right: 8px; padding: 3px 8px; font-size: 12px; font-weight: 500; color: #24292e; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 4px; cursor: pointer; z-index: 1;" onclick="navigator.clipboard.writeText(document.getElementById('code-snippet').textContent).then(() => { this.textContent = 'Copied!'; setTimeout(() => { this.textContent = 'Copy'; }, 2000); })">
-  </button>
-  <pre><code id="code-snippet">docker exec -it ollama ollama pull llama3</code></pre>
-</div>
+Automatic Model Initialization: When you run docker-compose up -d, a temporary service named model-puller will automatically start, download the required LLM (defined in .env), and then stop. Note: The first run may take a few minutes depending on your internet speed as it downloads the model (approx 4GB).
+
 Import Workflow:
 * Open n8n in your browser (usually http://localhost:5678).
 * Import the n8n/workflows/main_agent.json file.
